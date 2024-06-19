@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import { FaLocationDot } from "react-icons/fa6";
-import { MdEmail } from "react-icons/md";
-import { BiSupport } from "react-icons/bi";
+import appstore from "../assets/appstore.png";
+import playstore from "../assets/playstore.png";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import linkdln from "../assets/linkdln.svg";
+import twitter from "../assets/twitter.svg";
 
 export default function Footer() {
   const date = new Date().getFullYear();
@@ -79,6 +82,19 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20 pb-5 items-center justify-start">
+          <div className="flex flex-row gap-2 md:gap-10 ">
+            <img className=" h-14" src={appstore} alt="" />
+            <img className=" h-14" src={playstore} alt="" />
+          </div>
+
+          <div className="flex flex-row gap-10 ">
+            <img className=" h-8" src={facebook} alt="" />
+            <img className=" h-8" src={instagram} alt="" />
+            <img className=" h-8" src={linkdln} alt="" />
+            <img className=" h-8" src={twitter} alt="" />
           </div>
         </div>
       </div>
