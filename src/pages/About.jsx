@@ -2,14 +2,13 @@ import React from "react";
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
 
-function Home() {
+function About() {
   return (
     <>
       <NavBar />
-
       <Footer />
     </>
   );
 }
 
-export default Home;
+export default About;
