@@ -91,10 +91,10 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-row gap-10 ">
-            <img className=" h-8" src={facebook} alt="" />
-            <img className=" h-8" src={instagram} alt="" />
-            <img className=" h-8" src={linkdln} alt="" />
-            <img className=" h-8" src={twitter} alt="" />
+            <img className=" h-6" src={facebook} alt="" />
+            <img className=" h-6" src={instagram} alt="" />
+            <img className=" h-6" src={linkdln} alt="" />
+            <img className=" h-6" src={twitter} alt="" />
           </div>
         </div>
       </div>
