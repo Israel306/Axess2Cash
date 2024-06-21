@@ -103,7 +103,7 @@ function NavBar() {
               })}
             </ul>
             <div className="relative">
-              <Link className="hidden font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-full lg:flex items-center gap-2">
+              <Link className="hidden font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-lg lg:flex items-center gap-2">
                 Join Axess2Cash
               </Link>
               {isListVisible && (
@@ -149,7 +149,7 @@ export default NavBar;
 const data = [
   {
     name: "Personal",
-    link: "/personal",
+    link: "/",
   },
   {
     name: "About Us",

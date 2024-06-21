@@ -8,22 +8,30 @@ import accessibilityimg from "/src/assets/accessibilityimg.png";
 import security from "/src/assets/security.png";
 import convenience from "/src/assets/convenience.png";
 import innovation from "/src/assets/innovation.png";
+import business from "/src/assets/business.png";
+import gradient from "/src/assets/gradient.png";
+import gradient2 from "/src/assets/gradient2.png";
+import coin from "/src/assets/coin.png";
 
 function About() {
   return (
     <>
       <NavBar />
       <div className="bg-[#161518]">
-        <div className="bg-[#0F0E0D] h-[720px] text-white flex flex-col justify-center items-center">
-          <h1 className="mb-3"> About Us</h1>
-          <p className=" text-center text-[grey]">
-            We are a catalyst for financial empowerment and inclusion.
-          </p>
+        <div className="relative bg-[#0F0E0D] md:h-[520px] text-white flex flex-col justify-center">
+          <img src={gradient2} alt="" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center">
+            <h1 className="mb-3 text-center"> About Us</h1>
+            <p className=" text-center text-[grey]">
+              We are a catalyst for financial empowerment and inclusion.
+            </p>
+          </div>
         </div>
-        <div className="flex  md:mt-[100px] mt-[70px] md:px-20 px-5">
+        <div className="container-w"></div>
+        <div className="flex  md:mt-[170px] mt-[70px] md:px-20 px-5">
           <div className="flex flex-col  md:flex-row  bg-[#282828] rounded-[50px]  p-5 ">
             <div className="mt-[20px] md:ml-3 ml-0">
-              <h1 className="mb-3 mt-5 text-white">Who We Are</h1>
+              <h1 className="mb-3 mt-9 text-white">Who We Are</h1>
               <p className=" leading-10 text-[grey]">
                 We are a leading provider of innovative financial services,
                 dedicated to empowering individuals worldwide with convenient,
@@ -109,6 +117,26 @@ function About() {
           </div>
         </div>
 
+        <div className="relative md:px-20 px-5 mt-[23px]">
+          <div className="">
+            <img src={business} className="object-cover h-[500px]"></img>
+          </div>
+          <div className="flex flex-col md:flex-row  absolute inset-0 md:px-20 px-5">
+            <div className="md:px-20 px-5 md:py-20">
+              <h1 className="mb-3 mt-5 text-white  ">Axess2cash Business</h1>
+              <p className="leading-10 text-white ">
+                Receive payments from your employers via Axess2cash
+              </p>
+
+              <button className="bg-black text-white  text-xl border px-5 rounded-2xl mt-[50px]">
+                Coming soon
+              </button>
+            </div>
+            <div className="">
+              <img src={coin} className="py-10"></img>
+            </div>
+          </div>
+        </div>
         <Footer />
       </div>
     </>
