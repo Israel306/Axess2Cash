@@ -2,7 +2,7 @@ import React from "react";
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
 import Button from "../components/Button";
-import hsection1 from "../assets/hsection1.png";
+import hsection from "../assets/hsection.mp4";
 import hsection2 from "../assets/hsection2.png";
 import hsection3 from "../assets/hsection3.png";
 import hsection4 from "../assets/hsection4.png";
@@ -37,7 +37,13 @@ function Personal() {
           />
         </div>
         <div className="">
-          <img src={hsection1} alt="" />
+          <video
+            className="object-cover w-full"
+            src={hsection}
+            autoPlay
+            loop
+            muted
+          />
         </div>
       </div>
 
