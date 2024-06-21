@@ -5,6 +5,7 @@ import About from "./pages/About";
 import Help from "./pages/Help";
 import Awareness from "./pages/Awareness";
 import Faq from "./pages/Faq";
+import Signup from "./pages/signup/process/Signup";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/help" element={<Help />} />
         <Route path="/awareness" element={<Awareness />} />
         <Route path="/faq" element={<Faq />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </Router>
   );
