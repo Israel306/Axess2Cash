@@ -43,7 +43,7 @@ function About() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center mt-[30px] md:px-20 px-5">
+        <div className="flex flex-col items-center mt-20 md:px-20 px-5">
           <h1 className="text-center text-[#FF790C] mb-2">Our Mission</h1>
           <p className="text-[grey] text-center">
             “We aim to bridge the gap between traditional banking and financial
@@ -52,14 +52,14 @@ function About() {
           </p>
         </div>
 
-        <div className="mt-[40px]">
+        <div className="mt-20">
           <h1 className="text-[#FF790C] text-center mb-[20px]">
             Why choose us?
           </h1>
         </div>
 
         <div className=" md:px-20 px-5">
-          <div className="flex flex-col  md:flex-row  bg-[#282828] rounded-[50px] p-5 ">
+          <div className="flex flex-col  md:flex-row  bg-[#282828] rounded-[50px] p-5 items-center ">
             <div className="mt-[20px] md:ml-3 ml-0">
               <h1 className="mb-3 mt-5 text-[#FF790C]">Accesibility</h1>
               <p className=" leading-10 text-white">
@@ -76,9 +76,9 @@ function About() {
         </div>
 
         <div className="mt-[30px] flex flex-col md:flex-row justify-between md:px-20 px-5 gap-4">
-          <div className=" bg-[#282828] flex flex-col justify-center items-center text-center rounded-[30px]">
-            <h1 className="text-[#FF790C] mt-[50px] mb-5">Security</h1>
-            <p className="text-white">
+          <div className=" bg-[#282828] flex flex-col justify-center items-center text-center rounded-[30px] p-10">
+            <h1 className="text-[#FF790C]  mb-5">Security</h1>
+            <p className="text-white mb-5">
               We prioritize your security by utilizing advanced encryption,
               multi-factor authentication, and biometric verification to protect
               your personal information and transactions.
@@ -86,9 +86,9 @@ function About() {
             <img src={security} className="w-[200px] h-[240px]"></img>
           </div>
 
-          <div className=" bg-[#282828] flex flex-col justify-center items-center text-center rounded-[30px]">
-            <h1 className="text-[#FF790C] mt-[50px] mb-5">Convenience</h1>
-            <p className="text-white">
+          <div className=" bg-[#282828] flex flex-col  items-center text-center rounded-[30px] p-10">
+            <h1 className="text-[#FF790C] mb-5">Convenience</h1>
+            <p className="text-white mb-5">
               Our user-friendly app and A2C Store Value Card simplifies the
               process of withdrawing and depositing cash, providing a seamless
               and hassle-free experience for our users.
@@ -98,7 +98,7 @@ function About() {
         </div>
 
         <div className=" md:px-20 px-5 mt-[20px]">
-          <div className="flex flex-col  md:flex-row  bg-[#282828] rounded-[50px] p-5 ">
+          <div className="flex flex-col  md:flex-row items-center  bg-[#282828] rounded-[50px] p-5 ">
             <div className="mt-[20px] md:ml-3 ml-0">
               <h1 className="mb-3 mt-5 text-[#FF790C]">Innovation</h1>
               <p className=" leading-10 text-white">
@@ -115,23 +115,26 @@ function About() {
           </div>
         </div>
 
-        <div className="relative md:px-20 px-5 mt-[23px]">
+        <div className="relative md:px-20 px-5 mt-[23px] mb-10 w-full">
           <div className="">
-            <img src={business} className="object-cover h-[500px]"></img>
+            <img
+              src={business}
+              className="object-cover h-[500px] w-[100%]"
+            ></img>
           </div>
-          <div className="flex flex-col md:flex-row  absolute inset-0 md:px-20 px-5">
-            <div className="md:px-20 px-5 md:py-20">
+          <div className="flex flex-col md:flex-row items-center absolute inset-0 md:px-20 px-5 ">
+            <div className="md:px-20 px-5 md:py-20 w-full">
               <h1 className="mb-3 mt-5 text-white  ">Axess2cash Business</h1>
               <p className="leading-10 text-white ">
                 Receive payments from your employers via Axess2cash
               </p>
 
-              <button className="bg-black text-white  text-xl border px-5 rounded-2xl mt-[50px]">
+              <button className="bg-black text-white  text-xl border p-2 rounded-2xl mt-[50px]">
                 Coming soon
               </button>
             </div>
-            <div className="">
-              <img src={coin} className="py-10"></img>
+            <div className="w-full">
+              <img src={coin}></img>
             </div>
           </div>
         </div>
