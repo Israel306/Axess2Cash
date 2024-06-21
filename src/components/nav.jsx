@@ -44,7 +44,7 @@ function NavBar() {
         boxShadow: scrolling ? "0px 3px 4px rgba(54, 102, 70, 0.24)" : "none",
       }}
     >
-      <div className="bg-black px-[20px] md:px-[50px] py-5 border-b-[1px] border-[#FF790C]">
+      <div className="bg-black px-[20px] md:px-[50px] py-5 border-b-[1px] border-[#ff790c67]">
         <div className="flex items-center justify-between container-w m-auto">
           <Link to="/">
             <div className="flex items-center justify-center gap-2">
