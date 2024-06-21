@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 
-const DropdownItem = ({ text }) => {
+const DropdownItem = ({ text, backgroundColor }) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => setIsOpen(!isOpen);
 
@@ -13,8 +13,8 @@ const DropdownItem = ({ text }) => {
           justifyContent: "space-between",
           alignItems: "center",
           padding: "10px",
-          backgroundColor: isOpen ? "#FF790C" : "white",
-          color: isOpen ? "white" : "black",
+          backgroundColor: isOpen ? "#FF790C" : backgroundColor,
+          color: isOpen ? "white" : "white",
           cursor: "pointer",
         }}
         onClick={toggleDropdown}
@@ -24,7 +24,11 @@ const DropdownItem = ({ text }) => {
       </div>
       {isOpen && (
         <div
-          style={{ padding: "10px", backgroundColor: "white", color: "black" }}
+          style={{
+            padding: "10px",
+            backgroundColor: "#161518",
+            color: "white",
+          }}
         >
           Detailed information about "{text}".
         </div>
