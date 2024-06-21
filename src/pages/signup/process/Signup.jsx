@@ -14,8 +14,8 @@ function Signup() {
           </div>
         </Link>
       </div>
-      <div className="bg-black py-20 px-5 md:pl-60 flex flex-row justify-between items-start">
-        <div className="bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-10">
+      <div className="bg-black py-20 px-5  flex flex-row justify-between items-start">
+        <div className="container-w bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-10">
           <h1 className="text-[#FF790C]">Let's get Started</h1>
           <form action="" className="mt-5">
             <div className="flex flex-col mb-5">
@@ -81,11 +81,11 @@ function Signup() {
             <div>
               <p className="text-white">At least:</p>
               <div className="mt-5 flex flex-col md:flex-row gap-4">
-                <div className="rounded-full bg-[#A4D3FF] p-3">
-                  8 characters
+                <div className=" rounded-full bg-[#A4D3FF] p-3">
+                  <p className="small-text"> 8 characters</p>
                 </div>
                 <div className="rounded-full bg-[#A4D3FF] p-3">
-                  An uppercase leeter
+                  An uppercase letter
                 </div>
                 <div className="rounded-full bg-[#A4D3FF] p-3">
                   A special character
