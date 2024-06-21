@@ -93,7 +93,10 @@ function NavBar() {
               })}
             </ul>
             <div className="relative lg:flex items-center">
-              <Link className="font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-lg flex items-center gap-2">
+              <Link
+                to="/signup"
+                className="font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-lg flex items-center gap-2"
+              >
                 Join Axess2Cash
               </Link>
             </div>
