@@ -83,18 +83,18 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col md:flex-row gap-10 md:gap-20 pb-5 items-center justify-start">
-          <div className="flex flex-row gap-2 md:gap-10 ">
-            <img className=" h-14" src={appstore} alt="" />
-            <img className=" h-14" src={playstore} alt="" />
-          </div>
+          <div className="flex flex-col md:flex-row gap-10 md:gap-20 pb-5 items-center justify-start">
+            <div className="flex flex-row gap-2 md:gap-10 ">
+              <img className=" h-14" src={appstore} alt="" />
+              <img className=" h-14" src={playstore} alt="" />
+            </div>
 
-          <div className="flex flex-row gap-10 ">
-            <img className=" h-6" src={facebook} alt="" />
-            <img className=" h-6" src={instagram} alt="" />
-            <img className=" h-6" src={linkdln} alt="" />
-            <img className=" h-6" src={twitter} alt="" />
+            <div className="flex flex-row gap-10 ">
+              <img className=" h-6" src={facebook} alt="" />
+              <img className=" h-6" src={instagram} alt="" />
+              <img className=" h-6" src={linkdln} alt="" />
+              <img className=" h-6" src={twitter} alt="" />
+            </div>
           </div>
         </div>
       </div>
