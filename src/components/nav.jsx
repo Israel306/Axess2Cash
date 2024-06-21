@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -6,12 +6,11 @@ import { IoMdClose } from "react-icons/io";
 
 function NavBar() {
   const [scrolling, setScrolling] = useState(true);
-  const [isListVisible, setListVisible] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleResize = () => {
-      // Close the navigation if the screen size increases
       if (window.innerWidth > 768) {
         setOpen(false);
       }
@@ -21,11 +20,9 @@ function NavBar() {
       setScrolling(window.scrollY === 0);
     };
 
-    // Attach event listeners for window resize and scroll
     window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
-    // Clean up the event listeners on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
@@ -40,13 +37,6 @@ function NavBar() {
     }, 300);
   };
 
-  const toggleListVisibility = () => {
-    setListVisible(true);
-  };
-  const notToggleListVisibility = () => {
-    setListVisible(false);
-  };
-
   return (
     <div
       className="sticky top-0 bg-white z-50"
@@ -58,7 +48,7 @@ function NavBar() {
         <div className="flex items-center justify-between container-w m-auto">
           <Link to="/">
             <div className="flex items-center justify-center gap-2">
-              <img src={logo} alt="" className="h-[50px]" />
+              <img src={logo} alt="Logo" className="h-[50px]" />
               <h1 className="text-[#FF790C]">Axess2Cash</h1>
             </div>
           </Link>
@@ -81,13 +71,13 @@ function NavBar() {
           >
             <button
               className="p-0 border-none outline-none focus:outline-none lg:hidden flex items-end justify-end w-full mt-7 mb-10"
-              onClick={(open) => setOpen(!open)}
+              onClick={() => setOpen(!open)}
             >
               <IoMdClose color="#FF790C" size={25} />
             </button>
-            <ul className="flex flex-col lg:flex-row gap-5 lg:items-center">
+            <ul className="flex flex-col lg:flex-row lg:flex-1 lg:justify-end gap-5 lg:items-center">
               {data.map((link) => {
-                const isActive = location.pathname.startsWith(link.link);
+                const isActive = location.pathname === link.link;
                 return (
                   <li key={link.name}>
                     <Link
@@ -102,40 +92,10 @@ function NavBar() {
                 );
               })}
             </ul>
-            <div className="relative">
-              <Link className="hidden font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-lg lg:flex items-center gap-2">
+            <div className="relative lg:flex items-center">
+              <Link className="font-semibold text-[14px] lg:text-[11px] xl:text-[14px] uppercase bg-[#FF790C] text-white px-4 py-2 rounded-lg flex items-center gap-2">
                 Join Axess2Cash
               </Link>
-              {isListVisible && (
-                <ul
-                  onMouseLeave={notToggleListVisibility}
-                  onMouseEnter={toggleListVisibility}
-                  className="absolute bg-white left-0 top-[2.5rem] py-2 px-2 space-y-1 bg-paletteColor5 z-10"
-                  style={{
-                    boxShadow: "0px 10px 20px rgba(41, 51, 61, 0.1)",
-                    borderRadius: "0px 0px 2px 2px",
-                    width: "200px",
-                  }}
-                >
-                  {portal.map((link) => {
-                    const isActive = location.pathname.startsWith(link.link);
-                    return (
-                      <li key={link.name} className={`px-4 py-2 `}>
-                        <Link
-                          to={link.link}
-                          className={`hover:text-[#A62429] font-primary text[16px] ${
-                            isActive
-                              ? "text-paletteColor4"
-                              : "text-paletteColor2"
-                          }`}
-                        >
-                          {link.name}
-                        </Link>
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
             </div>
           </nav>
         </div>
