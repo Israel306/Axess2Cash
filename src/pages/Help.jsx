@@ -4,16 +4,20 @@ import NavBar from "../components/nav";
 import Footer from "../components/footer";
 import scam from "../assets/scam.png";
 import faq from "../assets/faq.png";
+import gradient2 from "/src/assets/gradient2.png";
 
 function Help() {
   return (
     <>
       <NavBar />
-      <div className="bg-black flex flex-col items-center justify-center h-80">
-        <h1 className="text-white">Help</h1>
-        <p className="mt-4 text-[gray]">
-          We are always here to assist you 24/7
-        </p>
+      <div className="relative bg-[#0F0E0D]  text-white flex flex-col justify-center">
+        <img src={gradient2} alt="" />
+        <div className="absolute inset-0 flex flex-col items-center justify-center">
+          <h1 className="mb-3 text-center"> Help</h1>
+          <p className=" text-center text-[grey]">
+            We are always here to assist you 24/7
+          </p>
+        </div>
       </div>
       <div className="px-5 py-5 md:py-0 md:px-20 bg-[#1E1F1D] flex flex-col md:flex-row items-center justify-between w-full gap-10 md:gap-20">
         <div className="flex flex-col">

@@ -2,14 +2,12 @@ import React from "react";
 import NavBar from "../components/nav";
 import Footer from "../components/footer";
 import aboutimg from "/src/assets/aboutimg.png";
-import phone from "/src/assets/phone.png";
-import world from "/src/assets/world.png";
+
 import accessibilityimg from "/src/assets/accessibilityimg.png";
 import security from "/src/assets/security.png";
 import convenience from "/src/assets/convenience.png";
 import innovation from "/src/assets/innovation.png";
 import business from "/src/assets/business.png";
-import gradient from "/src/assets/gradient.png";
 import gradient2 from "/src/assets/gradient2.png";
 import coin from "/src/assets/coin.png";
 
@@ -18,7 +16,7 @@ function About() {
     <>
       <NavBar />
       <div className="bg-[#161518]">
-        <div className="relative bg-[#0F0E0D] md:h-[520px] text-white flex flex-col justify-center">
+        <div className="relative bg-[#0F0E0D]  text-white flex flex-col justify-center">
           <img src={gradient2} alt="" />
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <h1 className="mb-3 text-center"> About Us</h1>
