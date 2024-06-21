@@ -117,11 +117,11 @@ function About() {
           </div>
         </div>
 
-        <div className="relative md:px-20 px-5 mt-[23px]">
+        <div className="relative md:px-20 px-5 mt-[23px] mb-10">
           <div className="">
             <img src={business} className="object-cover h-[500px]"></img>
           </div>
-          <div className="flex flex-col md:flex-row items-center absolute inset-0 md:px-20 px-5">
+          <div className="flex flex-col md:flex-row items-center absolute inset-0 md:px-20 px-5 ">
             <div className="md:px-20 px-5 md:py-20 w-full">
               <h1 className="mb-3 mt-5 text-white  ">Axess2cash Business</h1>
               <p className="leading-10 text-white ">
