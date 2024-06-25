@@ -6,6 +6,7 @@ import Help from "./pages/Help";
 import Awareness from "./pages/Awareness";
 import Faq from "./pages/Faq";
 import Signup from "./pages/signup/process/Signup";
+import Otp from "./pages/signup/process/Otp";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/awareness" element={<Awareness />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/otp" element={<Otp />} />
       </Routes>
     </Router>
   );

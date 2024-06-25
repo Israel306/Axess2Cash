@@ -41,7 +41,7 @@ p {
 
 @media (min-width: 200px) and (max-width: 768px) {
   h1 {
-    font-size: 25px;
+    font-size: 23px;
   }
   .small-text {
     font-size: 12px;

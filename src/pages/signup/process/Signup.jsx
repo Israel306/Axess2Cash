@@ -14,10 +14,10 @@ function Signup() {
           </div>
         </Link>
       </div>
-      <div className="bg-black py-20 px-5  flex flex-row justify-between items-start">
-        <div className="container-w bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-10">
+      <div className="bg-black py-20 px-5  flex flex-row  items-start w-full">
+        <div className="container-w bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-10 ">
           <h1 className="text-[#FF790C]">Let's get Started</h1>
-          <form action="" className="mt-5">
+          <form action="" className="mt-5 text-[gray]">
             <div className="flex flex-col mb-5">
               <label className="text-white" htmlFor="">
                 First Name
@@ -60,7 +60,7 @@ function Signup() {
               </label>
               <input
                 className="mt-2 rounded-[15px] bg-transparent border-[0.75px] border-gray p-3"
-                type="number"
+                type="tel"
                 name=""
                 id=""
                 placeholder="00 0000 0000"
@@ -72,7 +72,7 @@ function Signup() {
               </label>
               <input
                 className="mt-2 rounded-[15px] bg-transparent border-[0.75px] border-gray p-3"
-                type="number"
+                type="password"
                 name=""
                 id=""
                 placeholder="Enter Password"
@@ -80,32 +80,34 @@ function Signup() {
             </div>
             <div>
               <p className="text-white">At least:</p>
-              <div className="mt-5 flex flex-col md:flex-row gap-4">
-                <div className=" rounded-full bg-[#A4D3FF] p-3">
-                  <p className="small-text"> 8 characters</p>
+              <div className="mt-5 flex flex-row gap-2 md:gap-4 w-full text-center">
+                <div className=" rounded-full bg-[#A4D3FF] p-1 md:p-3 ">
+                  <p className="text-[10px] "> 8 characters</p>
                 </div>
-                <div className="rounded-full bg-[#A4D3FF] p-3">
-                  An uppercase letter
+                <div className="rounded-full bg-[#A4D3FF] p-1 md:p-3">
+                  <p className="text-[10px]"> An uppercase letter </p>
                 </div>
-                <div className="rounded-full bg-[#A4D3FF] p-3">
-                  A special character
+                <div className="rounded-full bg-[#A4D3FF] p-1 md:p-3">
+                  <p className="text-[10px]"> A lowercase letter </p>
                 </div>
               </div>
-              <div className="mt-4 flex flex-row gap-4">
-                <div className="rounded-full bg-[#A4D3FF] p-3">
-                  8 characters
+              <div className="mt-4 flex flex-row gap-2 md:gap-4 text-center">
+                <div className="rounded-full bg-[#A4D3FF] p-1 md:p-3">
+                  <p className="text-[10px]"> A special character </p>
                 </div>
-                <div className="rounded-full bg-[#A4D3FF] p-3">A number</div>
+                <div className="rounded-full bg-[#A4D3FF] p-1  md:p-3">
+                  <p className="text-[10px]"> A number </p>
+                </div>
               </div>
 
               <div className="mt-10 flex flex-row items-start md:items-center gap-2">
                 <input
-                  className="h-6 w-6 rounded-full"
+                  className="h-4 w-4 rounded-full"
                   type="checkbox"
                   name=""
                   id=""
                 />
-                <p className="text-white text-center">
+                <p className="text-white text-center text-[10px]">
                   I agree to the{" "}
                   <span className="text-[#005BFE]">Terms of Service</span> and{" "}
                   <span className="text-[#005BFE]">Privacy Policy</span>
@@ -113,9 +115,11 @@ function Signup() {
               </div>
 
               <div className="mt-10">
-                <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[#FF790C]">
-                  <p className="text-white">Next</p>
-                </button>
+                <Link to="/otp">
+                  <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[#FF790C]">
+                    <p className="text-white">Next</p>
+                  </button>
+                </Link>
               </div>
               <p className="text-white mt-10 text-center">
                 Already have an account?{" "}
@@ -124,7 +128,7 @@ function Signup() {
             </div>
           </form>
         </div>
-        <div className="hidden md:flex">
+        <div className="hidden md:flex ">
           <img src={globe} alt="" />
         </div>
       </div>
