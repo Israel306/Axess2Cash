@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import logo from "../../../assets/logo.svg";
 import globe from "/src/assets/globe.png";
 
-function Otp() {
-  const [otp, setOtp] = useState(["", "", "", "", "", ""]);
+function ConfirmPin() {
+  const [otp, setOtp] = useState(["", "", "", ""]);
 
   const handleChange = (element, index) => {
     if (/^[0-9]$/.test(element.value)) {
@@ -36,9 +36,9 @@ function Otp() {
       </div>
       <div className="bg-black py-20 px-5 flex flex-row items-center md:items-start h-screen md:h-full w-full">
         <div className="container-w bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-5 md:p-10 ">
-          <h1 className=" text-[#FF790C]">Verify your phone number</h1>
+          <h1 className=" text-[#FF790C]">Confirm your Axess2cash pin</h1>
           <p className="text-white mt-2">
-            Please enter OTP sent to your phone number
+            Enter the 4-digit code to confirm your Axess2cash pin
           </p>
           <form action="" className="mt-10">
             {/* otp box */}
@@ -55,16 +55,11 @@ function Otp() {
               ))}
             </div>
             <div className="mt-20">
-              <Link to="/accsetup">
+              <Link to="/login">
                 <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[#FF790C]">
-                  <p className="text-white">Next</p>
+                  <p className="text-white">Continue</p>
                 </button>
               </Link>
-            </div>
-            <div className="mt-4">
-              <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[white] border-[1px] border-[#FF790C]">
-                <p className="text-[#FF790C]">Resend Code</p>
-              </button>
             </div>
           </form>
         </div>
@@ -76,4 +71,4 @@ function Otp() {
   );
 }
 
-export default Otp;
+export default ConfirmPin;

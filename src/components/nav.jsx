@@ -124,6 +124,6 @@ const data = [
   },
   {
     name: "Sign In",
-    link: "/signin",
+    link: "/login",
   },
 ];

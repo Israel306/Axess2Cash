@@ -7,6 +7,10 @@ import Awareness from "./pages/Awareness";
 import Faq from "./pages/Faq";
 import Signup from "./pages/signup/process/Signup";
 import Otp from "./pages/signup/process/Otp";
+import AccSetup from "./pages/signup/process/AccSetup";
+import CreatePin from "./pages/signup/process/CreatePin";
+import ConfirmPin from "./pages/signup/process/ConfirmPin";
+import Login from "./pages/signup/process/Login";
 
 function App() {
   return (
@@ -19,7 +23,11 @@ function App() {
         <Route path="/awareness" element={<Awareness />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/otp" element={<Otp />} />
+        <Route path="/accsetup" element={<AccSetup />} />
+        <Route path="/createpin" element={<CreatePin />} />
+        <Route path="/confirmpin" element={<ConfirmPin />} />
       </Routes>
     </Router>
   );
