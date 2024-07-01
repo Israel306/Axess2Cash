@@ -51,15 +51,11 @@ function Login() {
               <p className="text-[007BFF]">forgot password?</p>
 
               <div className="mt-10">
-                <a
-                  href="https://axesswebanking.vercel.app/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <Link to="https://axesswebanking.vercel.app/">
                   <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[#FF790C]">
                     <p className="text-white">Next</p>
                   </button>
-                </a>
+                </Link>
               </div>
 
               <p className="text-white mt-10 text-center">
