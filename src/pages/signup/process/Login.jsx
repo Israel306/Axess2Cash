@@ -14,10 +14,14 @@ function Login() {
           </div>
         </Link>
       </div>
-      <div className="bg-black py-20 px-5  flex flex-row  items-start w-full">
+      <div className="bg-black py-20 px-5  flex flex-row  items-start w-full h-screen md:h-full">
         <div className="container-w bg-[#1F1F1F] border-[1px] border-[transparent] border-r-[#ff790c68] border-b-[#ff790c68] rounded-[30px] p-10 ">
           <h1 className="text-[#FF790C]">Welcome back</h1>
-          <form action="" className="mt-5 text-[gray]">
+          <form
+            action="https://axesswebanking.vercel.app/"
+            id=""
+            className="mt-5 text-[gray]"
+          >
             <div className="flex flex-col mb-5">
               <label className="text-white" htmlFor="">
                 Email Address
@@ -47,11 +51,15 @@ function Login() {
               <p className="text-[007BFF]">forgot password?</p>
 
               <div className="mt-10">
-                <Link to="https://axesswebanking.vercel.app/">
+                <a
+                  href="https://axesswebanking.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button className="flex flex-row w-full justify-center items-center gap-2 rounded-md p-2 px-4 md:py-2 md:px-7 transition duration-300 ease-in-out transform hover:opacity-75 hover:scale-105 bg-[#FF790C]">
                     <p className="text-white">Next</p>
                   </button>
-                </Link>
+                </a>
               </div>
 
               <p className="text-white mt-10 text-center">
@@ -63,7 +71,7 @@ function Login() {
             </div>
           </form>
         </div>
-        <div className="hidden md:flex ">
+        <div className="hidden md:flex">
           <img src={globe} alt="" />
         </div>
       </div>
